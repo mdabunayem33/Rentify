@@ -1,0 +1,402 @@
+/* ============================================
+   Global Styles & Variables
+   ============================================ */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary-color: #10b981;
+  --secondary-hover: #059669;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f9fafb;
+  --bg-white: #ffffff;
+  --border-color: #e5e7eb;
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #fbfcfc;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   Header & Navigation
+   ============================================ */
+.header {
+  background-color: #fbfcfc;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  border-radius: 6px;
+}
+
+.nav-main ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-main a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-main a:hover {
+  color: var(--primary-color);
+}
+
+.nav-auth-desktop {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-auth-mobile {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-dark);
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--text-dark);
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  bottom: -8px;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero {
+  background-color: var(--bg-light);
+  background-image: linear-gradient(
+      rgba(15, 23, 42, 0.7),
+      rgba(15, 23, 42, 0.7)
+    ),
+    url("images/hero_image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 0;
+  text-align: center;
+  color: var(--bg-white);
+}
+
+.hero-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  margin: 1.5rem 0 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #fbfcfc;
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-light);
+  border-color: var(--primary-color);
+}
+
+/* ============================================
+   General Section Styling
+   ============================================ */
+.section {
+  padding: 5rem 0;
+}
+
+.section-light {
+  background-color: var(--bg-light);
+}
+
+.section-title {
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+/* ============================================
+   Card & Grid Layouts
+   ============================================ */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.card {
+  background-color: #fbfcfc;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.steps-container,
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.step-card,
+.feature {
+  text-align: center;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 auto 1rem;
+}
+
+.step-card h3,
+.feature h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.step-card p,
+.feature p {
+  color: var(--text-light);
+}
+
+/* ============================================
+   Testimonials
+   ============================================ */
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: #fbfcfc;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-weight: 600;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+.footer {
+  background-color: var(--text-dark);
+  color: var(--bg-light);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 768px) {
+  .nav-main {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fbfcfc;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-main.active {
+    display: block;
+  }
+
+  .nav-main ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .nav-auth-desktop {
+    display: none;
+  }
+
+  .nav-auth-mobile {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle.active .hamburger {
+    background-color: transparent;
+  }
+
+  .nav-toggle.active .hamburger::before {
+    transform: rotate(45deg) translate(5px, 6px);
+  }
+
+  .nav-toggle.active .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .card-container,
+  .steps-container,
+  .features-grid,
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+}

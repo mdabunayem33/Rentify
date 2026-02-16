@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Landlord Dashboard • Rentify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dashboard_style.css" />
+  </head>
+  <body class="landlord-dashboard">
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+
+    <!-- Main Layout -->
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Sidebar Content -->
+        <div>
+          <!-- Brand/Logo Area -->
+          <div class="brand">
+            <img
+              src="images/rentify_logo.png"
+              alt="Rentify Logo"
+              class="logo-img"
+            />
+            <span class="brand-text">Rentify</span>
+          </div>
+
+          <!-- Navigation -->
+          <nav class="nav">
+            <a class="nav-link active" data-section="dashboard">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </span>
+              <span>Dashboard</span>
+            </a>
+            <a class="nav-link" data-section="properties">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </span>
+              <span>Properties</span>
+            </a>
+            <a class="nav-link" data-section="tenants">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </span>
+              <span>Tenants</span>
+            </a>
+            <a class="nav-link" data-section="payments">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path
+                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+              </span>
+              <span>Payments</span>
+            </a>
+            <a class="nav-link" data-section="maintenance">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Maintenance</span>
+            </a>
+            <a class="nav-link" data-section="technicians">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="M12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                  <path d="M12 14c-2.33 0-4.44.8-6 2.06" />
+                </svg>
+              </span>
+              <span>Technicians</span>
+            </a>
+            <a class="nav-link" data-section="announcements">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3 11.5a2.5 2.5 0 0 1 5 0V12a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-.5z"
+                  ></path>
+                  <path
+                    d="M3 6.5a2.5 2.5 0 0 1 5 0V7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-.5z"
+                  ></path>
+                  <path d="M14 7h7"></path>
+                  <path d="M14 12h7"></path>
+                  <path d="M14 17h7"></path>
+                  <path
+                    d="M3 16.5a2.5 2.5 0 0 1 5 0V17a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-.5z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Announcements</span>
+            </a>
+            <a class="nav-link" data-section="profile">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </span>
+              <span>Profile</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Sidebar Footer (Logout) -->
+        <div class="sidebar-footer">
+          <button id="logoutBtn" class="logout-link">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
+            </span>
+            <span>Log out</span>
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Top Bar -->
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div>
+              <h1 class="title">
+                Welcome, <span id="landlordName">Landlord</span>
+              </h1>
+            </div>
+          </div>
+          <div class="topbar-actions">
+            <!-- Actions like notifications, etc. could go here -->
+          </div>
+        </header>
+
+        <!-- DASHBOARD -->
+        <section id="section-dashboard" class="section active">
+          <!-- Stat Cards -->
+          <!-- MODIFIED: Added icons and new classes to stat cards -->
+          <div class="cards stats-grid">
+            <!-- Card 1: Total Properties -->
+            <div class="card card-stat">
+              <div class="card-icon-wrapper icon-properties">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <div class="card-content">
+                <div class="card-label">Total Properties</div>
+                <div class="card-value" id="totalProperties">—</div>
+                <div class="card-meta">Managed units</div>
+              </div>
+            </div>
+            <!-- Card 2: Total Tenants -->
+            <div class="card card-stat">
+              <div class="card-icon-wrapper icon-tenants">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div class="card-content">
+                <div class="card-label">Total Tenants</div>
+                <div class="card-value" id="totalTenants">—</div>
+                <div class="card-meta">Active leases</div>
+              </div>
+            </div>
+            <!-- Card 3: Occupancy Rate -->
+            <div class="card card-stat">
+              <div class="card-icon-wrapper icon-occupancy">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                </svg>
+              </div>
+              <div class="card-content">
+                <div class="card-label">Occupancy Rate</div>
+                <div class="card-value" id="occupancyRate">—</div>
+                <div class="card-meta" id="occupancyMeta"></div>
+              </div>
+            </div>
+            <!-- Card 4: Potential Monthly Rent -->
+            <div class="card card-stat">
+              <div class="card-icon-wrapper icon-rent">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path
+                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-content">
+                <div class="card-label">Potential Monthly Rent</div>
+                <div class="card-value" id="monthlyRentCollected">—</div>
+                <div class="card-meta">From all properties</div>
+              </div>
+            </div>
+            <!-- Card 5: Total Payments Received -->
+            <div class="card card-stat">
+              <div class="card-icon-wrapper icon-payments">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </div>
+              <div class="card-content">
+                <div class="card-label">Total Payments Received</div>
+                <div class="card-value" id="totalPaymentsReceived">—</div>
+                <div class="card-meta">All-time</div>
+              </div>
+            </div>
+            <!-- Card 6: Pending Maintenance -->
+            <div class="card card-stat">
+              <div class="card-icon-wrapper icon-maintenance">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="card-content">
+                <div class="card-label">Pending Maintenance</div>
+                <div class="card-value" id="pendingMaintenance">—</div>
+                <div class="card-meta">Open requests</div>
+              </div>
+            </div>
+          </div>
+          <!-- End Stat Cards -->
+
+          <!-- Quick Actions -->
+          <h2 class="h2">Quick Actions</h2>
+          <div id="dashboardActions" class="cards action-grid">
+            <!-- Action cards will be injected here by JS -->
+          </div>
+
+          <!-- Recent Activity -->
+          <div class="dashboard-grid">
+            <div class="panel">
+              <h2 class="h2">Recent Payments</h2>
+              <div id="recentPaymentsList" class="recent-list">
+                <!-- Recent payments will be loaded here -->
+              </div>
+            </div>
+            <div class="panel">
+              <h2 class="h2">Open Maintenance Requests</h2>
+              <div id="recentMaintenanceList" class="recent-list">
+                <!-- Recent maintenance will be loaded here -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROFILE -->
+        <section id="section-profile" class="section">
+          <div class="panel">
+            <div class="panel-head">
+              <h2 class="h2">Profile</h2>
+              <div class="profile-actions" style="display: flex; gap: 8px">
+                <button id="editProfileBtn" class="btn">Edit Profile</button>
+                <button id="saveProfileBtn" class="btn primary hidden">
+                  Save Changes
+                </button>
+                <button id="cancelEditBtn" class="btn ghost hidden">
+                  Cancel
+                </button>
+              </div>
+            </div>
+            <div class="kv">
+              <div>
+                <span>Name</span>
+                <strong id="pName">—</strong>
+                <input type="text" id="pNameInput" class="hidden" />
+              </div>
+              <div>
+                <span>Email</span>
+                <strong id="pEmail">—</strong>
+                <input type="email" id="pEmailInput" class="hidden" />
+              </div>
+              <div>
+                <span>Phone</span>
+                <strong id="pPhone">—</strong>
+                <input type="tel" id="pPhoneInput" class="hidden" />
+              </div>
+              <div>
+                <span>NID</span>
+                <strong id="pNid">—</strong>
+                <input type="text" id="pNidInput" class="hidden" />
+              </div>
+              <div>
+                <span>Date of Birth</span>
+                <strong id="pDob">—</strong>
+                <input type="date" id="pDobInput" class="hidden" />
+              </div>
+              <div><span>Role</span><strong>Landlord</strong></div>
+              <div>
+                <span>Member since</span><strong id="pCreated">—</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROPERTIES -->
+        <section id="section-properties" class="section">
+          <div class="panel">
+            <div class="panel-head">
+              <h2 class="h2">My Properties</h2>
+              <button id="addPropertyBtn" class="btn primary">
+                Add Property
+              </button>
+            </div>
+            <div id="propertiesGrid" class="cards">
+              <!-- Property cards will be injected here by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- TENANTS SECTION -->
+        <section id="section-tenants" class="section">
+          <div class="panel">
+            <div class="panel-head">
+              <h2 class="h2">Tenants</h2>
+              <button class="btn primary" id="addTenantBtn">Add Tenant</button>
+            </div>
+            <div id="tenantsList" class="list"></div>
+          </div>
+        </section>
+
+        <!-- PAYMENTS SECTION -->
+        <section id="section-payments" class="section">
+          <div class="panel">
+            <h2 class="h2">Payment History</h2>
+            <div id="paymentsList" class="list">
+              <!-- Payments will be loaded here by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- MAINTENANCE REQUESTS -->
+        <section id="section-maintenance" class="section">
+          <div class="panel">
+            <h2 class="h2">Maintenance Requests</h2>
+            <div id="maintenanceList" class="list"></div>
+          </div>
+        </section>
+
+        <!-- TECHNICIANS SECTION -->
+        <section id="section-technicians" class="section">
+          <div class="panel">
+            <div class="panel-head">
+              <h2 class="h2">Technicians</h2>
+              <button id="addTechnicianBtn" class="btn primary">
+                Add Technician
+              </button>
+            </div>
+            <div id="techniciansList" class="list">
+              <!-- Technicians will be loaded here by JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- ANNOUNCEMENTS SECTION -->
+        <section id="section-announcements" class="section">
+          <div class="panel">
+            <div class="panel-head">
+              <h2 class="h2">Announcements</h2>
+              <button id="addAnnouncementBtn" class="btn primary">
+                Create Announcement
+              </button>
+            </div>
+            <div id="announcementsList" class="list">
+              <!-- Announcements will be loaded here by JS -->
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- End Main Content -->
+    </div>
+    <!-- End Layout -->
+
+    <!-- Modals -->
+
+    <!-- Add Tenant Modal -->
+    <dialog id="addTenantModal" class="modal">
+      <div class="modal-body">
+        <h3>Add Tenant</h3>
+        <form id="verifyTenantForm">
+          <label for="tenantEmail">Tenant Email</label>
+          <input type="email" id="tenantEmail" required />
+          <label for="tenantPhone">Tenant Phone</label>
+          <input type="tel" id="tenantPhone" required />
+          <div class="modal-actions">
+            <button type="button" class="btn ghost" id="cancelVerifyBtn">
+              Cancel
+            </button>
+            <button type="submit" class="btn primary">Verify Tenant</button>
+          </div>
+        </form>
+        <div id="addLeaseSection" class="hidden">
+          <hr
+            style="
+              border: none;
+              border-top: 1px solid var(--border-color);
+              margin: 24px 0;
+            "
+          />
+          <h4>Tenant Verified</h4>
+          <p id="verifiedTenantInfo" class="muted"></p>
+          <form id="addLeaseForm">
+            <label for="propertySelect">Select Property</label>
+            <select id="propertySelect" required></select>
+            <div class="grid">
+              <div>
+                <label for="leaseDate">Lease Start Date</label>
+                <input type="date" id="leaseDate" required />
+              </div>
+              <div>
+                <label for="leaseExpiryDate">Lease Expiry Date</label>
+                <input type="date" id="leaseExpiryDate" required />
+              </div>
+            </div>
+            <div class="grid">
+              <div>
+                <label for="rentAmount">Rent Amount</label>
+                <input type="number" id="rentAmount" required />
+              </div>
+              <div>
+                <label for="advancePayment">Advance Payment (৳)</label>
+                <input type="number" id="advancePayment" value="0" />
+              </div>
+            </div>
+            <label for="rentPayDate">Rent Paying Date of Month</label>
+            <input type="number" id="rentPayDate" min="1" max="31" required />
+            <div class="modal-actions">
+              <button type="button" class="btn ghost" id="cancelLeaseBtn">
+                Cancel
+              </button>
+              <button type="submit" class="btn primary">Add Lease</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Add Property Modal -->
+    <dialog id="addPropertyModal" class="modal">
+      <div class="modal-body">
+        <h3>Add New Property</h3>
+        <form id="addPropertyForm">
+          <div class="grid">
+            <div>
+              <label for="propertyName">Property Name</label>
+              <input
+                type="text"
+                id="propertyName"
+                placeholder="e.g., Green Valley Apartments"
+                required
+              />
+            </div>
+            <div>
+              <label for="propertyUnit">Unit / Apt #</label>
+              <input
+                type="text"
+                id="propertyUnit"
+                placeholder="e.g., A1, Flat 2B"
+              />
+            </div>
+          </div>
+          <label for="propertyAddress">Property Address</label>
+          <textarea
+            id="propertyAddress"
+            rows="3"
+            placeholder="e.g., House 123, Road 4, Block F, Banani, Dhaka"
+            required
+          ></textarea>
+          <div class="grid">
+            <div>
+              <label for="propertyRent">Monthly Rent (৳)</label>
+              <input
+                type="number"
+                id="propertyRent"
+                placeholder="e.g., 25000"
+              />
+            </div>
+            <div>
+              <label for="propertyBedrooms">Bedrooms</label>
+              <input
+                type="number"
+                id="propertyBedrooms"
+                placeholder="e.g., 3"
+              />
+            </div>
+          </div>
+          <div class="grid">
+            <div>
+              <label for="propertyBathrooms">Bathrooms</label>
+              <input
+                type="number"
+                id="propertyBathrooms"
+                placeholder="e.g., 2"
+              />
+            </div>
+            <div>
+              <label for="propertySqft">Area (sqft)</label>
+              <input type="number" id="propertySqft" placeholder="e.g., 1200" />
+            </div>
+          </div>
+          <label for="propertyDetails">Other Details</label>
+          <textarea
+            id="propertyDetails"
+            rows="4"
+            placeholder="e.g., Balcony, utilities info, etc."
+          ></textarea>
+          <div class="modal-actions">
+            <button type="button" class="btn ghost" id="cancelAddPropertyBtn">
+              Cancel
+            </button>
+            <button type="submit" class="btn primary">Save Property</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Property Details Modal -->
+    <dialog id="propertyDetailsModal" class="modal">
+      <div class="modal-body">
+        <h3 id="detailsAddress">Property Details</h3>
+        <div class="kv">
+          <div>
+            <span>Property Name</span><strong id="detailsName">—</strong>
+          </div>
+          <div>
+            <span>Unit / Apt #</span><strong id="detailsUnit">—</strong>
+          </div>
+          <div>
+            <span>Monthly Rent</span><strong id="detailsRent">—</strong>
+          </div>
+          <div>
+            <span>Bedrooms</span><strong id="detailsBedrooms">—</strong>
+          </div>
+          <div>
+            <span>Bathrooms</span><strong id="detailsBathrooms">—</strong>
+          </div>
+          <div><span>Area (sqft)</span><strong id="detailsSqft">—</strong></div>
+        </div>
+        <h4 class="h2" style="margin-top: 20px">Other Details</h4>
+        <p id="detailsOther" class="muted" style="margin-top: 4px">
+          No additional details provided.
+        </p>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="closeDetailsBtn">
+            Close
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Add Announcement Modal -->
+    <dialog id="addAnnouncementModal" class="modal">
+      <div class="modal-body">
+        <h3>Create New Announcement</h3>
+        <form id="addAnnouncementForm">
+          <label>Send To</label>
+          <div class="recipient-options">
+            <label>
+              <input type="radio" name="recipientType" value="all" checked />
+              All Tenants
+            </label>
+            <label>
+              <input type="radio" name="recipientType" value="specific" />
+              Specific Tenants
+            </label>
+          </div>
+
+          <div
+            id="specificTenantsListWrapper"
+            class="hidden"
+            style="
+              margin-top: 16px;
+              max-height: 200px;
+              overflow-y: auto;
+              border: 1px solid var(--border-color);
+              border-radius: 8px;
+              padding: 12px;
+            "
+          >
+            <!-- Tenant checkboxes will be dynamically inserted here by JS -->
+          </div>
+
+          <label for="announcementTitle">Title</label>
+          <input
+            type="text"
+            id="announcementTitle"
+            placeholder="e.g., Water Supply Interruption"
+            required
+          />
+          <label for="announcementDetails">Details</label>
+          <textarea
+            id="announcementDetails"
+            rows="5"
+            placeholder="Provide details about the announcement..."
+            required
+          ></textarea>
+          <div class="modal-actions">
+            <button
+              type="button"
+              class="btn ghost"
+              id="cancelAddAnnouncementBtn"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn primary">Send Announcement</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Add Technician Modal -->
+    <dialog id="addTechnicianModal" class="modal">
+      <div class="modal-body">
+        <h3 id="technicianModalTitle">Add Technician</h3>
+        <form id="addTechnicianForm">
+          <!-- Hidden input to store ID for editing -->
+          <input type="hidden" id="technicianId" />
+
+          <label for="technicianName">Full Name</label>
+          <input
+            type="text"
+            id="technicianName"
+            placeholder="e.g., John Doe"
+            required
+          />
+
+          <label for="technicianRole">Role / Specialty</label>
+          <select id="technicianRole" required>
+            <option value="" disabled selected>Select a role...</option>
+            <option value="Plumber">Plumber</option>
+            <option value="Electrician">Electrician</option>
+            <option value="Carpenter">Carpenter</option>
+            <option value="Painter">Painter</option>
+            <option value="HVAC">HVAC</option>
+            <option value="General Handyman">General Handyman</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <div class="grid">
+            <div>
+              <label for="technicianPhone">Phone Number</label>
+              <input
+                type="tel"
+                id="technicianPhone"
+                placeholder="e.g., 017..."
+                required
+              />
+            </div>
+            <div>
+              <label for="technicianEmail">Email (Optional)</label>
+              <input
+                type="email"
+                id="technicianEmail"
+                placeholder="e.g., john@example.com"
+              />
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <button type="button" class="btn ghost" id="cancelAddTechnicianBtn">
+              Cancel
+            </button>
+            <button type="submit" class="btn primary">Save Technician</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Maintenance Details Modal -->
+    <dialog id="maintenanceDetailsModal" class="modal">
+      <div class="modal-body">
+        <h3 id="maintenanceModalTitle">Maintenance Request</h3>
+
+        <div class="modal-kv">
+          <div>
+            <span>Tenant</span>
+            <strong id="maintModalTenant">—</strong>
+          </div>
+          <div>
+            <span>Property</span>
+            <strong id="maintModalProperty">—</strong>
+          </div>
+          <div>
+            <span>Reported On</span>
+            <strong id="maintModalReported">—</strong>
+          </div>
+        </div>
+
+        <h4 class="h2" style="margin-top: 20px; margin-bottom: 8px">
+          Issue Details
+        </h4>
+        <strong id="maintModalIssueTitle" style="font-size: 16px">—</strong>
+        <p
+          id="maintModalIssueDetails"
+          class="muted"
+          style="margin-top: 8px; white-space: pre-wrap"
+        >
+          —
+        </p>
+
+        <form id="updateMaintenanceForm">
+          <input type="hidden" id="maintenanceRequestId" />
+          <hr
+            style="
+              border: none;
+              border-top: 1px solid var(--border-color);
+              margin: 24px 0;
+            "
+          />
+          <h4 class="h2" style="margin-top: 0; margin-bottom: 8px">
+            Update Request
+          </h4>
+          <div class="grid">
+            <div>
+              <label for="assignTechnicianSelect">Assign Technician</label>
+              <select id="assignTechnicianSelect">
+                <option value="">None</option>
+                <!-- Technicians loaded by JS -->
+              </select>
+            </div>
+            <div>
+              <label for="updateStatusSelect">Update Status</label>
+              <select id="updateStatusSelect" required>
+                <option value="open">Open</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button
+              type="button"
+              class="btn ghost"
+              id="cancelUpdateMaintenanceBtn"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="btn primary">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Confirmation Modal -->
+    <dialog id="confirmDialog" class="modal">
+      <div class="modal-body">
+        <h3 id="confirmTitle">Confirm Action</h3>
+        <p id="confirmMessage" class="muted">
+          Are you sure you want to proceed? This action cannot be undone.
+        </p>
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="confirmCancelBtn">
+            Cancel
+          </button>
+          <button type="button" class="btn primary danger" id="confirmOkBtn">
+            Confirm
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- NEW: Tenant Details Modal -->
+    <dialog id="tenantDetailsModal" class="modal">
+      <div class="modal-body">
+        <h3 id="tenantDetailsName">Tenant Details</h3>
+
+        <h4 class="h2" style="margin-top: 20px; margin-bottom: 8px">
+          Personal Information
+        </h4>
+        <div class="modal-kv">
+          <div>
+            <span>Email</span>
+            <strong id="tenantDetailsEmail">—</strong>
+          </div>
+          <div>
+            <span>Phone</span>
+            <strong id="tenantDetailsPhone">—</strong>
+          </div>
+          <div>
+            <span>National ID</span>
+            <strong id="tenantDetailsNid">—</strong>
+          </div>
+          <div>
+            <span>Date of Birth</span>
+            <strong id="tenantDetailsDob">—</strong>
+          </div>
+          <div class="kv-full">
+            <span>Permanent Address</span>
+            <strong id="tenantDetailsAddress">—</strong>
+          </div>
+        </div>
+
+        <h4 class="h2" style="margin-top: 20px; margin-bottom: 8px">
+          Lease Information
+        </h4>
+        <div class="modal-kv">
+          <div>
+            <span>Property</span>
+            <strong id="tenantDetailsProperty">—</strong>
+          </div>
+          <div>
+            <span>Monthly Rent</span>
+            <strong id="tenantDetailsRent">—</strong>
+          </div>
+          <div>
+            <span>Lease Start</span>
+            <strong id="tenantDetailsLeaseStart">—</strong>
+          </div>
+          <div>
+            <span>Lease End</span>
+            <strong id="tenantDetailsLeaseEnd">—</strong>
+          </div>
+          <div>
+            <span>Advance Paid</span>
+            <strong id="tenantDetailsAdvance">—</strong>
+          </div>
+          <div>
+            <span>Rent Due Day</span>
+            <strong id="tenantDetailsDueDay">—</strong>
+          </div>
+        </div>
+
+        <h4 class="h2" style="margin-top: 20px; margin-bottom: 8px">
+          Payment History
+        </h4>
+        <div
+          id="tenantPaymentHistoryList"
+          class="list"
+          style="
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: var(--bg-color);
+            border-radius: 8px;
+          "
+        >
+          <!-- Payment history will be loaded here -->
+          <div class="list-item">Loading payment history...</div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn ghost" id="closeTenantDetailsBtn">
+            Close
+          </button>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Firebase (compat) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+    <!-- App logic -->
+    <script src="landlord_dashboard.js"></script>
+  </body>
+</html>

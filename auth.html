@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth • Rentify</title>
+    <link rel="stylesheet" href="auth_style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="auth-shell">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>Rentify</h1>
+        <p class="subtitle"></p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Auth tabs">
+        <button
+          id="tab-login"
+          class="tab active"
+          data-tab="login"
+          role="tab"
+          aria-selected="true"
+        >
+          Login
+        </button>
+        <button
+          id="tab-signup"
+          class="tab"
+          data-tab="signup"
+          role="tab"
+          aria-selected="false"
+        >
+          Sign Up
+        </button>
+      </div>
+      <div class="card">
+        <!-- Top options -->
+
+        <!-- Status / toast area -->
+        <div
+          id="status"
+          class="status"
+          aria-live="polite"
+          style="display: none"
+        ></div>
+
+        <!-- LOGIN -->
+        <section
+          id="panel-login"
+          class="panel active"
+          role="tabpanel"
+          aria-labelledby="tab-login"
+        >
+          <form id="login-form" novalidate>
+            <div class="seg">
+              <label class="seg-label">I am a</label>
+              <div class="seg-group" id="login-role">
+                <button
+                  type="button"
+                  class="seg-btn active"
+                  data-role="landlord"
+                >
+                  Landlord
+                </button>
+                <button type="button" class="seg-btn" data-role="tenant">
+                  Tenant
+                </button>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="login-email">Email</label>
+              <input
+                id="login-email"
+                type="email"
+                required
+                placeholder="Enter your email"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="field">
+              <label for="login-password">Password</label>
+              <input
+                id="login-password"
+                type="password"
+                required
+                placeholder="••••••••"
+                autocomplete="current-password"
+              />
+            </div>
+
+            <button class="primary" type="submit">Log in</button>
+          </form>
+        </section>
+
+        <!-- SIGN UP -->
+        <section
+          id="panel-signup"
+          class="panel"
+          role="tabpanel"
+          aria-labelledby="tab-signup"
+        >
+          <form id="signup-form" novalidate>
+            <div class="seg">
+              <label class="seg-label">I am a</label>
+              <div class="seg-group" id="signup-role">
+                <button
+                  type="button"
+                  class="seg-btn active"
+                  data-role="landlord"
+                >
+                  Landlord
+                </button>
+                <button type="button" class="seg-btn" data-role="tenant">
+                  Tenant
+                </button>
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="field">
+                <label for="signup-name">Full name</label>
+                <input
+                  id="signup-name"
+                  type="text"
+                  required
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                />
+              </div>
+
+              <div class="field">
+                <label for="signup-phone">Phone</label>
+                <input
+                  id="signup-phone"
+                  type="tel"
+                  required
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="signup-email">Email</label>
+              <input
+                id="signup-email"
+                type="email"
+                required
+                placeholder="Enter your email"
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="grid">
+              <div class="field">
+                <label for="signup-password">Password</label>
+                <input
+                  id="signup-password"
+                  type="password"
+                  required
+                  placeholder="Min 6 characters"
+                  autocomplete="new-password"
+                />
+              </div>
+              <div class="field">
+                <label for="signup-confirm">Confirm password</label>
+                <input
+                  id="signup-confirm"
+                  type="password"
+                  required
+                  placeholder="Repeat password"
+                  autocomplete="new-password"
+                />
+              </div>
+            </div>
+
+            <button class="primary" type="submit">Create account</button>
+          </form>
+
+          <p class="hint">
+            Already have an account? <a href="#" id="go-login">Back to login</a>
+          </p>
+        </section>
+      </div>
+
+      <p class="footer-hint">
+        By continuing you agree to our <a href="#">Terms</a> and
+        <a href="#">Privacy Policy</a>.
+      </p>
+    </main>
+
+    <!-- Firebase compat SDK (matches your existing project) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+    <!-- Auth logic -->
+    <script src="auth.js"></script>
+  </body>
+</html>
