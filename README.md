@@ -109,6 +109,10 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/mdabunayem33/Rentify.git](https://github.com/mdabunayem33/Rentify.git)
-<br>
-## 👥 Meet the Team
-<img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/3adcd340-48f2-4c15-b755-a8002d977699" />
+
+<h3>👥 Meet the Team</h3>
+<p align="center">
+  <img width="600" height="800" alt="image" src="https://github.com/user-attachments/assets/3adcd340-48f2-4c15-b755-a8002d977699" />
+</p>
+
+
