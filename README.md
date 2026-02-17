@@ -73,7 +73,6 @@ Rentify is a smart digital solution designed to transform and simplify property 
 <img width="700" height="1000" alt="14  Profile Management Page" src="https://github.com/user-attachments/assets/eb54d490-852b-4957-b801-dbd61499a80c" />
 </p>
 <br>
---------------------------------------------------------
 
 ## 🚀 Problem It Solves
 Traditional property management in Bangladesh often relies on rigid designs, manual paperwork, and offline processes. Rentify addresses these challenges by:
