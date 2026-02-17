@@ -1,3 +1,6 @@
+<p align="center">
+<img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/35855441-1f32-4d4b-b4a7-39deae1a8c58" />
+</p>
 <h1>Rentify: A Comprehensive Rental Property Management Platform</h1>
 
 Rentify is a smart digital solution designed to transform and simplify property management in Bangladesh. It bridges the gap between landlords and tenants through an automated, user-friendly web application built with modern web technologies.
