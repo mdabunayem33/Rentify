@@ -7,10 +7,13 @@ Rentify is a smart digital solution designed to transform and simplify property 
 ## 📸 Project Preview
 **Tenant Home Page:**
 <img width="700" height="1000" alt="1 Tenant Home Page" src="https://github.com/user-attachments/assets/62c798b8-1ef8-4e86-86da-327af8a7b3f9" />
+<br>
 **Landlord Home (Dashboard)**
 <img width="700" height="1000" alt="7  Landlord Home (Dashboard)" src="https://github.com/user-attachments/assets/a1f52ca6-f0ec-4992-bcad-c294ad146418" />
+<br>
 **Tenant Profile:**
 <img width="700" height="1000" alt="2 Tenant Profile" src="https://github.com/user-attachments/assets/5fd3b164-e103-449d-92d7-029878a194fd" />
+<br>
 **My Lease Page:**
 <img width="700" height="1000" alt="3  My Lease Page" src="https://github.com/user-attachments/assets/19d94569-aa39-48fc-953c-f39d07e8919f" />
 **Maintenance Request Status:**
