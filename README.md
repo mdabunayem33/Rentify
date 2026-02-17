@@ -42,10 +42,8 @@ To run this project locally:
    ```bash
    git clone [https://github.com/mdabunayem33/Rentify.git](https://github.com/mdabunayem33/Rentify.git)
 <br>
-👥 Meet the Team
+## 👥 Meet the Team
 
-| Name | Role | ID |
-| :--- | :--- | :--- |
-| **Junayed Hasan** | Project Coordination & Backend Management | 0812310205101059 |
-| **Md Abu Nayem** | Frontend & Backend Development | 0812310205101070 |
-| **Mst Mahbuba Khatun Mim** | UI/UX Design & Frontend Development | 0812310105101067 |
+**Junayed Hasan** *Role:* Project Coordination, Backend Management & Database [cite: 634, 636]
+**Md Abu Nayem** *Role:* Frontend & Backend Development [cite: 642, 644, 645]
+**Mst Mahbuba Khatun Mim** *Role:* UI/UX Design & Frontend Development [cite: 638, 640, 641]
