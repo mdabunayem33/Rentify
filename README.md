@@ -41,3 +41,11 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone [https://github.com/mdabunayem33/Rentify.git](https://github.com/mdabunayem33/Rentify.git)
+<br>
+👥 Meet the Team
+
+| Name | Role | ID |
+| :--- | :--- | :--- |
+| **Junayed Hasan** | Project Coordination & Backend Management | 0812310205101059 |
+| **Md Abu Nayem** | Frontend & Backend Development | 0812310205101070 |
+| **Mst Mahbuba Khatun Mim** | UI/UX Design & Frontend Development | 0812310105101067 |
