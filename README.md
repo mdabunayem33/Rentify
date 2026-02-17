@@ -22,57 +22,57 @@ Rentify is a smart digital solution designed to transform and simplify property 
 <p align="center">
   <img width="700" height="1000" alt="3  My Lease Page" src="https://github.com/user-attachments/assets/19d94569-aa39-48fc-953c-f39d07e8919f" />
 </p>
-<br>
+
 <h3>Maintenance Request Status:</h3>
 <p align="center">
   <img width="700" height="1000" alt="4  Maintenance Request Status" src="https://github.com/user-attachments/assets/9391ac1d-c8f8-46bb-8803-6fe626e3cfb5" />
 </p>
-<br>
+
 <h3>Rent Payment Page:</h3>
 <p align="center">
   <img width="700" height="1000" alt="5  Rent Payment Page" src="https://github.com/user-attachments/assets/646ef713-a074-4808-982d-8bf5b9fbbcbd" />
 </p>
-<br>
+
 <h3>Maintenance Request Status:</h3>
 <p align="center">
   <img width="700" height="1000" alt="6 Maintenance Request Status" src="https://github.com/user-attachments/assets/4481d64c-3bb8-459a-bd4b-97fe373772b5" />
 </p>
-<br>
+
 <h3>Property Management Page:</h3>
 <p align="center">
   <img width="700" height="1000" alt="8  Property Management Page" src="https://github.com/user-attachments/assets/3cfa5889-ec6c-44e8-b1fc-ff5946c33902" />
 </p>
-<br>
+
 <h3>Tenant Management Page:</h3>
 <p align="center">
  <img width="700" height="1000" alt="9  Tenant Management Page" src="https://github.com/user-attachments/assets/dff85bb5-0ce9-47d2-b791-8d04e7278889" />
 </p>
-<br>
+
 <h3>Payments Management Page:</h3>
 <p align="center">
 <img width="700" height="1000" alt="10  Payments Management Page" src="https://github.com/user-attachments/assets/13851b07-c14a-417f-8c66-4af5051a6608" />
 </p>
-<br>
+
 <h3>Maintenance Approval:</h3>
 <p align="center">
 <img width="700" height="1000" alt="11  Maintenance Approval" src="https://github.com/user-attachments/assets/567a9944-1750-48bc-be48-aea5be6171b4" />
 </p>
-<br>
+
 <h3>Technicians Management Page:</h3>
 <p align="center">
 <img width="700" height="1000" alt="12  Technicians Management Page" src="https://github.com/user-attachments/assets/891f09c4-516d-4e79-9364-9cd588065734" />
 </p>
-<br>
+
 <h3>Announcement Creation:</h3>
 <p align="center">
 <img width="700" height="1000" alt="13  Announcement Creation" src="https://github.com/user-attachments/assets/3f075678-dfa2-4b34-9662-e0519cd22456" />
 </p>
-<br>
+
 <h3>Profile Management Page:</h3>
 <p align="center">
 <img width="700" height="1000" alt="14  Profile Management Page" src="https://github.com/user-attachments/assets/eb54d490-852b-4957-b801-dbd61499a80c" />
 </p>
-<br>
+
 
 ## 🚀 Problem It Solves
 Traditional property management in Bangladesh often relies on rigid designs, manual paperwork, and offline processes. Rentify addresses these challenges by:
