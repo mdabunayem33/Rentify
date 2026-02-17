@@ -44,6 +44,8 @@ To run this project locally:
 <br>
 ## 👥 Meet the Team
 
-**Junayed Hasan** *Role:* Project Coordination, Backend Management & Database [cite: 634, 636]
-**Md Abu Nayem** *Role:* Frontend & Backend Development [cite: 642, 644, 645]
-**Mst Mahbuba Khatun Mim** *Role:* UI/UX Design & Frontend Development [cite: 638, 640, 641]
+| Name | Role |
+| :--- | :--- |
+| **Junayed Hasan** | Project Coordination & Backend Management |
+| **Md Abu Nayem** | Frontend & Backend Development |
+| **Mst Mahbuba Khatun Mim** | UI/UX Design & Frontend Development |
