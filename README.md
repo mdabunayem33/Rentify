@@ -1,6 +1,6 @@
 # Rentify
 <br>
-Rentify: A Comprehensive Rental Property Management Platform
+<h1>Rentify: A Comprehensive Rental Property Management Platform</h1>
 
 Rentify is a smart digital solution designed to transform and simplify property management in Bangladesh. It bridges the gap between landlords and tenants through an automated, user-friendly web application built with modern web technologies.
 
@@ -25,12 +25,18 @@ Rentify is a smart digital solution designed to transform and simplify property 
   <img width="700" height="1000" alt="3  My Lease Page" src="https://github.com/user-attachments/assets/19d94569-aa39-48fc-953c-f39d07e8919f" />
 </p>
 <br>
+<h3>Maintenance Request Status:</h3>
+<p align="center">
+  <img width="700" height="1000" alt="4  Maintenance Request Status" src="https://github.com/user-attachments/assets/9391ac1d-c8f8-46bb-8803-6fe626e3cfb5" />
+</p>
+<br>
+<h3>Rent Payment Page:</h3>
+<p align="center">
+  <img width="700" height="1000" alt="5  Rent Payment Page" src="https://github.com/user-attachments/assets/646ef713-a074-4808-982d-8bf5b9fbbcbd" />
+</p>
+<br>
 
 
-**Maintenance Request Status:**
-<img width="700" height="1000" alt="4  Maintenance Request Status" src="https://github.com/user-attachments/assets/9391ac1d-c8f8-46bb-8803-6fe626e3cfb5" />
-**Rent Payment Page:**
-<img width="700" height="1000" alt="5  Rent Payment Page" src="https://github.com/user-attachments/assets/646ef713-a074-4808-982d-8bf5b9fbbcbd" />
 **Maintenance Request Status:**
 <img width="700" height="1000" alt="6 Maintenance Request Status" src="https://github.com/user-attachments/assets/4481d64c-3bb8-459a-bd4b-97fe373772b5" />
 **Property Management Page:**
