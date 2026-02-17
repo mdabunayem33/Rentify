@@ -1,5 +1,5 @@
 <p align="center">
-<img width="200" height="170" alt="image" src="https://github.com/user-attachments/assets/35855441-1f32-4d4b-b4a7-39deae1a8c58" />
+<img width="170" height="150" alt="image" src="https://github.com/user-attachments/assets/35855441-1f32-4d4b-b4a7-39deae1a8c58" />
 </p>
 <h1>Rentify: A Comprehensive Rental Property Management Platform</h1>
 
