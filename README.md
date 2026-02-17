@@ -111,9 +111,4 @@ To run this project locally:
    git clone [https://github.com/mdabunayem33/Rentify.git](https://github.com/mdabunayem33/Rentify.git)
 <br>
 ## 👥 Meet the Team
-
-| Name | Role |
-| :--- | :--- |
-| **Junayed Hasan** | Project Coordination & Backend Management |
-| **Md Abu Nayem** | Frontend & Backend Development |
-| **Mst Mahbuba Khatun Mim** | UI/UX Design & Frontend Development |
+<img width="900" height="1000" alt="image" src="https://github.com/user-attachments/assets/3adcd340-48f2-4c15-b755-a8002d977699" />
