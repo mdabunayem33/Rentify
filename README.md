@@ -10,18 +10,23 @@ Rentify is a smart digital solution designed to transform and simplify property 
   <img width="700" height="1000" alt="1 Tenant Home Page" src="https://github.com/user-attachments/assets/62c798b8-1ef8-4e86-86da-327af8a7b3f9" />
 </p>
 <br>
+<h3>Landlord Home (Dashboard):</h3>
+<p align="center">
+  <img width="700" height="1000" alt="7  Landlord Home (Dashboard)" src="https://github.com/user-attachments/assets/a1f52ca6-f0ec-4992-bcad-c294ad146418" />
+</p>
+<br>
+<h3>Tenant Profile:</h3>
+<p align="center">
+  <img width="700" height="1000" alt="2 Tenant Profile" src="https://github.com/user-attachments/assets/5fd3b164-e103-449d-92d7-029878a194fd" />
+</p>
+<br>
+<h3>My Lease Page:</h3>
+<p align="center">
+  <img width="700" height="1000" alt="3  My Lease Page" src="https://github.com/user-attachments/assets/19d94569-aa39-48fc-953c-f39d07e8919f" />
+</p>
+<br>
 
 
-
-<br>
-**Landlord Home (Dashboard)**
-<img width="700" height="1000" alt="7  Landlord Home (Dashboard)" src="https://github.com/user-attachments/assets/a1f52ca6-f0ec-4992-bcad-c294ad146418" />
-<br>
-**Tenant Profile:**
-<img width="700" height="1000" alt="2 Tenant Profile" src="https://github.com/user-attachments/assets/5fd3b164-e103-449d-92d7-029878a194fd" />
-<br>
-**My Lease Page:**
-<img width="700" height="1000" alt="3  My Lease Page" src="https://github.com/user-attachments/assets/19d94569-aa39-48fc-953c-f39d07e8919f" />
 **Maintenance Request Status:**
 <img width="700" height="1000" alt="4  Maintenance Request Status" src="https://github.com/user-attachments/assets/9391ac1d-c8f8-46bb-8803-6fe626e3cfb5" />
 **Rent Payment Page:**
